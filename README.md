@@ -6,7 +6,7 @@
   + randomNumber() 함수 사용
 
 * 사용자 숫자 입력
-  + randomNumber() 함수 사용
+  + readLine() 함수 사용
   + 입력 받은 값을 List 형식으로 저장
  
 * 입력 받은 숫자 validation 확인
