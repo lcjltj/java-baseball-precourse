@@ -6,7 +6,7 @@ import java.util.List;
 
 import static baseball.domain.Constants.*;
 
-public class Computer {
+public final class Computer {
 
     private static final Computer INSTANCE = new Computer();
     private List<Integer> numbers;
