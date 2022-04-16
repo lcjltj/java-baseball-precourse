@@ -4,14 +4,15 @@ import camp.nextstep.edu.missionutils.Randoms;
 
 import java.util.List;
 
-import static baseball.domain.Constants.*;
+import static baseball.constant.Constants.*;
 
 public final class Computer {
 
     private static final Computer INSTANCE = new Computer();
     private List<Integer> numbers;
 
-    private Computer() {}
+    private Computer() {
+    }
 
     public static Computer getInstance() {
         INSTANCE.numbers = generateRandomNumber();

@@ -11,7 +11,7 @@ public class BaseBallController {
     private static boolean play;
     private static Computer computer;
 
-    private BaseBallController(){
+    private BaseBallController() {
 
     }
 
@@ -28,7 +28,7 @@ public class BaseBallController {
         final List<Integer> list = User.inputNumber(InputView.printNumberMessage());
     }
 
-    private  static void requestRestart() {
+    private static void requestRestart() {
     }
 
 }
