@@ -3,7 +3,8 @@
 ## 기능 요구 사항
 
 * 서로 다른 세자리의 난수 생성
-  + randomNumber() 함수 사용
+  + pickNumberInRange() 함수 사용
+  + 중복 되지 않는 3 자리의 List 생성
 
 * 사용자 숫자 입력
   + readLine() 함수 사용
@@ -21,7 +22,7 @@
  
 * 비교 결과 값에 대해 출력
   + Strike, Ball 값이 0 이라면 '낫띵' 출력
-  + Strike, Ball 값에 따라 결과 출력 ex) 2볼  1스트라이크
+  + Strike, Ball 값에 따라 결과 출력 ex) 2볼 1스트라이크
 
 * 게임 재시작 기능
-  + 1. 재시작 / 2.종료 가 아닌 다른 값 입력 시 IllegalAgrumentExceptionException 발생 
+  + 1. 재시작 / 2.종료 가 아닌 다른 값 입력 시 IllegalAgrumentException 발생 
