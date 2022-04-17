@@ -1,34 +1,24 @@
 package baseball.controller;
 
 import baseball.domain.Computer;
-import baseball.domain.User;
-import baseball.view.InputView;
-
-import java.util.List;
+import camp.nextstep.edu.missionutils.Console;
 
 public class BaseBallController {
 
-    private static boolean play;
-    private static Computer computer;
-
     private BaseBallController() {
-
     }
 
     public static void start() {
-        play = true;
-        computer = Computer.getInstance();
+        boolean continued = true;
 
-        while (play) {
-            inputNumber();
+        while (continued) {
+            Computer computer = new Computer();
+            continued = computer.playGame();
         }
+
     }
 
-    private static void inputNumber() {
-        final List<Integer> list = User.inputNumber(InputView.printNumberMessage());
+    public static String inputNumber() {
+        return Console.readLine();
     }
-
-    private static void requestRestart() {
-    }
-
 }
